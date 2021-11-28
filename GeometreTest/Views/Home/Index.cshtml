@@ -1,0 +1,16 @@
+﻿@model Geometri.Shapes.Circle;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Index">
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p><label>Enter Radius</label></p>
+        <p><input type="number" asp-for="Radius"></p>
+        <p><input type="submit" /></p>
+        <p><label>Result</label></p>
+        <p>@ViewData["results"]</p>
+    </div>
+</form>
